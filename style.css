@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --dark-blue: #09141c;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    font-family: "Fira Code", monospace;
+}
+
+.status-board{
+    margin-top: 25px;
+    height: 65px;
+    width: 80%;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.on-your-marks-btn{
+    color: var(--dark-blue);
+    background-color: lightblue;
+    font-size: 1.5rem;
+    border: none;
+    padding: 2.5%;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.on-your-marks-btn:active{
+    background-color: var(--dark-blue);
+    color: white;
+    border: solid 1px lightblue;
+    cursor: pointer;
+}
+
+.wait-times{
+    border: solid 2px white;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-wait-time{
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+    width: 60px;
+}
+
+.settings-btn{
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.settings-btn:hover,
+.settings-btn:active{
+    color: darkgray
+}
+
+
+.settings-menu{
+    position: relative;
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+
+    padding: 10px;
+    border: solid 1px lightblue;
+    border-radius: 5px;
+
+    opacity: 0;
+}
+
+.close-settings-btn{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    top: 0;
+    left: 5px;
+}
+
+.close-settings-btn:hover,
+.close-settings-btn:active{
+    color: lightgray;
+    cursor: pointer;
+}
+
+.default-settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.oym-set-settings,
+.set-go-settings{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-section-header{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+input{
+    width: 60px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    border: 2px solid black;
+    font-family: inherit;
+}
+
+.change-settings-btn{
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    background-color: lightblue;
+    font-size: 1rem;
+    border: solid 2px var(--dark-blue);
+    padding: 2.5%;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.change-settings-btn:disabled,
+.change-settings-btn:disabled:active{
+    background-color:gray;
+    color: lightgray;
+    cursor:not-allowed;
+    border: solid 2px black;
+}
+
+
+.change-settings-btn:active{
+    background-color: var(--dark-blue);
+    color: lightblue;
+    border: solid 1px lightblue;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 400px){
+    .settings-menu{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 410px){
+    .settings-menu{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    .settings-menu{
+        width: 25%;
+    }
+
+    .on-your-marks-btn{
+        height: 45px;
+        padding: 10px;
+    }
+
+    .status-board{
+        width: 25%;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Signal</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <script src="./js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="status-board"></div>
+    <button class="on-your-marks-btn">On Your Marks!</button>
+
+        <div class="wait-times">
+            <label for="display-oym-set">OYM -> SET</label>
+            <input disabled type="number" name="display-oym-set" id="display-oym-set" class="display-wait-time">
+
+             <label for="display-set-go">SET -> GO</label>
+             <input disabled type="number" name="display-set-go" id="display-set-go" class="display-wait-time">
+                </div>
+        </div>
+
+
+
+
+    <div class="settings-btn">Settings</div>
+    <div class="settings-menu">
+        <div class="close-settings-btn">&times;</div>
+        <div class="default-settings">
+            <label for="default-settings-checkbox">Use Default Settings?</label>
+            <input type="checkbox" name="default-settings-checkbox" id="default-settings-checkbox" checked>
+        </div>
+
+        <hr/>
+
+
+        <!-- Settings for time between On Your Marks & Set-->
+        <div class="oym-set-settings">
+            <p class="settings-section-header">Time between On Your Marks and Set</p>
+            <div class="min-max-box">
+                <label for="oym-set-min">Min</label>
+                <input disabled type="number" name="oym-set-min" id="oym-set-min">
+                <label for="oym-set-max">Max</label>
+                <input disabled type="number" name="oym-set-max" id="oym-set-max">
+            </div>
+        </div>
+
+        <!-- Settings for time between On Your Marks & Set-->
+        <div class="set-go-settings">
+            <p class="settings-section-header">Time between Set and Go</p>
+            <div class="min-max-box">
+                <label for="set-go-min">Min</label>
+                <input disabled type="number" name="set-go-min" id="set-go-min">
+                <label for="set-go-max">Max</label>
+                <input disabled type="number" name="set-go-max" id="set-go-max">
+            </div>
+        </div>
+
+        <button disabled class="change-settings-btn" type="button"> Change Settings</button>
+    </div>
+</body>
+</html>
