@@ -1,1 +1,1 @@
-README not
+A web app featuring audio signals, randomized start delays, and programmable commands. This tool lets sprinters fine-tune their reaction times and acceleration. Ideal for solo training or synchronized group starts. The ultimate companion for athletes serious about optimizing their performance from the first step.
